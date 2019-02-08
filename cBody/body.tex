@@ -1,0 +1,32 @@
+%Cuerpo del artículo, pero la idea es que el nombre de estas secciones sean resultado de la investigación
+\section{Marco Referencial}
+
+\subsection*{Tipos de Replicación en BD}
+
+\begin{itemize}
+
+
+
+\item \textbf{Replicación Instantánea}: los datos de un servidor son simplemente copiados a otro servidor o a otra base de datos dentro del mismo servidor. Al copiarse todo no necesitas un control de cambios. Se suele utilizar cuando los datos cambian con  muy poca frecuencia.
+\item  \textbf{Replicación Transaccional}: primero se envía una copia completa de la base de datos y luego se van enviando de forma periódica (o a veces continua) las actualizaciones de los datos que cambian. Se utiliza cuando necesitas que todos los nodos con todas las instancias de la base de datos tengan los mismos datos a los pocos segundos de realizarse un cambio.
+\item  \textbf{Replicación de mezcla} : los datos de dos o más bases de datos se combinan en una sola base de datos. En primer lugar se envía una copia completa de la base de datos. Luego el Sistema de Gestión de Base de Datos va comprobando los cambios que van apareciendo en los distintos nodos y a una hora programada o a petición los datos se sincronizan. Es sobre todo útil cuando cada nodo suele utilizar solo los datos que se actualizan allí pero que por circunstancias necesita tener también los datos de los otros sitios.
+\end{itemize}
+
+
+\subsection*{Beneficios de la Replicación}
+
+\begin{itemize}
+\item Aumento de la fiabilidad
+\item Mejora en el rendimiento
+
+\item Mejora en la seguridad de los datos
+\end{itemize}
+
+
+
+
+
+
+
+
+
